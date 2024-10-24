@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inicio.css">
-    <title>Club de actividades</title>
+    <link rel="stylesheet" href="./css/inicio.css">
+    <title>Contaco</title>
 </head>
-<body>
-    <h1> <span class=" txtRojo"> Club de actividades   </span></h1>
-    <nav id="nav">   
-    
-         <a href="/index.html"> Inicio</a>
-         <a href="/nosotros.html"> Nosotros</a>
-         <a href="#"> Contacto</a>
-    
-</nav>
-    
-<section class="contacto" id="contacto">
-    <div class="contenido-seccion">
-        <div class="contenedor-titulo">
-            
-            <div class="info">
-                <span class="frase">¡Veni a conocernos!</span>
-                <h2>CONTACTO</h2>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="col">
-                <input type="text" placeholder="Ingrese mail">
-            </div>
-            <div class="col">
-                <input type="text" placeholder="Ingrese Nombre">
-            </div>
-        </div>
-        <div class="mensaje">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el Mensaje"></textarea>
-            <button>Enviar Mensaje</button>
-        </div>
-        <div class="fila-datos">
-            <div class="col">
-                <i class="fa-solid fa-location-dot"></i>
-                Avenida San Juan 588
-            </div>
-            <div class="col">
-                <i class="fa-solid fa-phone"></i>
-                123 - 456789
-            </div>
-            <div class="col">
-                <i class="fa-regular fa-clock"></i>
-                Lunes a Sábado, 7:00h - 23:00h
-            </div>
-        </div>
-    </div>
 
-</section>
-<footer>
-    <div class="info">
-        <p>2024 - <span class="txtRojo">Club de actividades</span> - Todos los derechos reservados</p>
-     
-</footer>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <div class="logo">CLUB DE ACTIVIDADES</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+
+                <div class="info">
+                    <span class="frase">¡Veni a conocernos!</span>
+                    <h2 class="frase2">CONTACTO</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <form id="contacto-form">
+                    <div class="col">
+                        <input type="text" id="nombre" required maxlength="50" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="email" required maxlength="100" placeholder="Ingrese su email">
+                    </div>
+                    <div class="col">
+                        <input type="tel" id="telefono" required maxlength="11"
+                            pattern="\+?[0-9]{1,4}?[-. ]?[0-9]{1,4}[-. ]?[0-9]{4,10}" placeholder="Ingrese su telefono">
+                    </div>
+            </div>
+            <div class="mensaje">
+                <textarea name="" id="" cols="30" rows="10"
+                    placeholder="Deje la información que le gustarías recibir"></textarea>
+                <button>Enviar Mensaje</button>
+            </div>
+            </form>
+            <div id="resultado"></div>
+            <div class="fila-datos">
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Avenida San Juan 588
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    123 - 456789
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-clock"></i>
+                    Lunes a Sábado, 7:00h - 23:00h
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="contenedor-footer">
+            <p>Club de actividades - 2024 © Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="scripts/formulario.js"> </script>
 </body>
+
 </html>
