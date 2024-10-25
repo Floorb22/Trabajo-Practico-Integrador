@@ -26,7 +26,7 @@ document.getElementById('contacto-form').addEventListener('submit', function(eve
     }
 
     const resultadoDiv = document.getElementById('resultado');
-    resultadoDiv.innerHTML = ''; // Limpiar resultados anteriores
+    resultadoDiv.innerHTML = ''; 
 
     if (errores.length > 0) {
         
