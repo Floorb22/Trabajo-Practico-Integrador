@@ -1,10 +1,10 @@
 const imagenes = [
-    '../img/musculacion.png',
-    '../img/crosfit.png',
-    '../img/zumba.png',
-    '../img/pilates.png',
-    '../img/yoga.png',
-    '../img/funcional.png'
+    './img/musculacion.png',
+    './img/crosfit.png',
+    './img/zumba.png',
+    './img/pilates.png',
+    './img/yoga.png',
+    './img/funcional.png'
 ];
 
 let indiceActual = 0;
