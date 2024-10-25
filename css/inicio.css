@@ -121,6 +121,7 @@ button:hover {
 .inicio .info h2{
   font-size: 4rem;
   letter-spacing: 3px;
+  font-family:sans-serif;
 }
 .inicio .info p{
   margin: 20px;
@@ -170,6 +171,8 @@ button:hover {
 }
 .nosotros .fila .col{
   width: 50%;
+  font-family:sans-serif;
+  
 }
 .nosotros .fila .col img {
   width: 80%;
@@ -181,24 +184,25 @@ button:hover {
   display: flex;
   align-items:center
 }
-.nosotros .fila .col .contenedor-titulo .numero{
-  color: #ff1133;
-  font-weight: bold;
-  display: block;
-  font-size: 5rem;
-}
+
 .nosotros .fila .col .contenedor-titulo .info{
   margin-left: 30px;
+  font-family:sans-serif;
 }
 .nosotros .fila .col .contenedor-titulo .info .frase{
   color: #ff1133;
+  font-family:sans-serif;
+  
+ 
 }
 .nosotros .fila .col .contenedor-titulo .info h2{
-  font-size: 3rem;
+  font-family:sans-serif;
+  font-size: 40px;
 }
 .nosotros .fila .col p{
  margin-bottom: 10px;
  line-height: 28px;
+ font-family:sans-serif;
 }
 .nosotros .fila .col .p-especial{
   font-weight: bold;
@@ -214,9 +218,11 @@ button:hover {
 .nosotros .fila-nosotros .frase{
   font-size: 18px;
   font-weight: 600;
+ 
 }
 .nosotros .fila-nosotros h2{
   font-size: 2.5rem;
+
 }
 .nosotros .fila-nosotros button{
   background-color: #ff1133;
